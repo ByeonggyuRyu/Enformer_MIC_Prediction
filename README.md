@@ -19,3 +19,42 @@ Welcome to the _Enformer_MIC_Prediction_ repository. This computational framewor
   <img src="./Figure_2_1200.png" width=75%>
 </p>
 <br />
+
+## Local Usage
+Below are the steps to get your environment set up and the model training initiated.
+### 1. Clone current repository 
+To clone the repository and navigate into it, execute the following commands in your terminal:
+
+```
+git clone https://github.com/ByeonggyuRyu/Enformer_MIC_Prediction.git
+cd Enformer_MIC_Prediction
+```
+### 2. Install requirements
+Before running the model, you need to install the required libraries.
+Create an environment with python version 3.7.15 and install the requirements by running:
+
+```
+conda create --name enformer_mic python=3.7.15
+conda activate enformer_mic
+pip install -r requirements.txt
+```
+This command will install all the necessary packages as listed in the _requirements.txt_ file.
+### 3. Initiate Training
+With the environment set up, you can now begin the training process. Run the following command:
+
+```
+python enformer_train.py ./results/train_log.txt ./results/test_result.txt ./results/model ./data/tfrecord_data/train_data.tfrecord ./data/tfrecord_data/val_data.tfrecord ./data/tfrecord_data/test_data.tfrecord
+```
+The command line arguments should be in the order of:
+<br />
+&nbsp;&nbsp; **1.**  file to write the training log (*"./results/train_log.txt"*)
+<br />
+&nbsp;&nbsp; **2.**  file to write the test result (*"./results/test_result.txt"*)
+<br />
+&nbsp;&nbsp; **3.**  folder to save the trained model (*"./results/model"*)
+<br />
+&nbsp;&nbsp; **4.**  tfrecord of train data (*"./data/tfrecord_data/train_data.tfrecord"*)
+<br />
+&nbsp;&nbsp; **5.**  tfrecord of validation data (*"./data/tfrecord_data/val_data.tfrecord"*)
+<br />
+&nbsp;&nbsp; **6.**  tfrecord of test data (*"./data/tfrecord_data/test_data.tfrecord"*)

@@ -1,0 +1,10 @@
+numpy==1.18
+pandas==1.2.3
+tqdm==4.64.1
+tensorflow==2.3.0
+PubChemPy==1.0.4
+rdkit==2022.9.4
+pydot==1.4.2
+dm-sonnet==2.0.0
+numpy2tfrecord==0.0.2
+git+https://github.com/EBjerrum/molvecgen
