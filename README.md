@@ -41,7 +41,7 @@ pip install -r requirements.txt
 This command will install all the necessary packages as listed in the _requirements.txt_ file.
 
 ### 3. Format the data into tfrecords
-Run the following command to create a tfrecord of the train, validation, test dataset under the folder "_./data/tfrecord_data_"
+Run the following command to create a tfrecord of the train, validation, test dataset under the folder _./data/tfrecord_data_
 
 ```
 python save_as_tfrecord.py
