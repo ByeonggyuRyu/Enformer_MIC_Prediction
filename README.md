@@ -39,7 +39,16 @@ conda activate enformer_mic
 pip install -r requirements.txt
 ```
 This command will install all the necessary packages as listed in the _requirements.txt_ file.
-### 3. Initiate Training
+
+### 3. Format the data into tfrecords
+Run the following command to create a tfrecord of the train, validation, test dataset under the folder "_./data/tfrecord_data_"
+
+```
+python save_as_tfrecord.py
+```
+This may take a while.
+
+### 4. Initiate Training
 With the environment set up, you can now begin the training process. Run the following command:
 
 ```
