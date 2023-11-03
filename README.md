@@ -46,7 +46,11 @@ Run the following command to create a tfrecord of the train, validation, test da
 ```
 python save_as_tfrecord.py
 ```
-This may take a while.
+This may take a while. To track the progress of data transformation, type in the following command in a seperate terminal:
+```
+watch -d -n 5 ls -sh ./data/tfrecord_data
+```
+The final size of test and validation set is ~4.4GB, training data is ~44GB.
 
 ### 4. Initiate Training
 With the environment set up, you can now begin the training process. Run the following command:
