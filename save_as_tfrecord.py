@@ -88,6 +88,8 @@ def getMatData(lst_data):
                     [0, 0, 0, 0, 0, 0, 0, 0, 0, 0.5, 1]]
     mat_lst = [
         {
+            'genome_id': item['PATRIC ID'],
+            'antibiotic': item['ANTI'],
             'seq_mat': (seq_mat_dict[item['PATRIC ID']] + anti_mat_dict[item['ANTI']]) / 2,
             'mic_label': np.array(mic_label_lst[item['MIC'] + 3]).astype(np.float32)
         }
