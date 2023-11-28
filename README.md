@@ -1,5 +1,5 @@
 # Enformer_MIC_Prediction
-Welcome to the _Enformer_MIC_Prediction_ repository. This computational framework has been tailored to predict antibiotics MIC values of Klebsiella pneumoniae using genomic data and antibiotic molecular structures. This model adapts the Enformer architecture, initially conceptualized by [Avsec et al.](https://www.nature.com/articles/s41592-021-01252-x) for long-range genomic interaction prediction, to address the challenge of AMR prediction.
+Welcome to the _Enformer_MIC_Prediction_ repository. This computational framework has been tailored to predict antibiotics MIC values of Klebsiella pneumoniae using genomic data and antibiotic molecular structures. This model adapts the Enformer architecture, initially conceptualized by [Avsec et al.](https://www.nature.com/articles/s41592-021-01252-x), to address the challenge of AMR prediction.
 ## Background
 ### Feature Engineering & Data Processing
 **Extracting AMR Genes:** Focusing on the practical application, the Enformer_MIC_Model optimizes computational efficiency by targeting AMR genes. By utilizing the Resistance Gene Identifier (RGI) tool associated with CARD database, we extracted the AMR genes from each Kpn strains.
