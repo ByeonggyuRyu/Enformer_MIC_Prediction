@@ -9,7 +9,7 @@ Welcome to the _Enformer_MIC_Prediction_ repository. This computational framewor
 ### Encoding & Data Transformation
 **Genomic Data Transformation:** Nucleotide bases 'A', 'C', 'G', 'T', and 'N' were respectively encoded as '[1, 0, 0, 0]', '[0, 1, 0, 0]', '[0, 0, 1, 0]', '[0, 0, 0, 1]', and '[0, 0, 0, 0]', resulting in the Genomic matrix of dimensions (98304, 4).
 
-**Antibiotics Data Encoding:** We procured the isomeric SMILES data for antibiotics from the PubChem21 database. This data was transformed into a (130, 20) matrix using one-hot character encoding. The (130, 2) matrix was reshaped into (650, 4) and then vertically stacked to synchronize with the dimensions of the Genomic matrix.
+**Antibiotics Data Encoding:** We procured the isomeric SMILES data for antibiotics from the PubChem database. This data was transformed into a (130, 20) matrix using one-hot character encoding. The (130, 2) matrix was reshaped into (650, 4) and then vertically stacked to synchronize with the dimensions of the Genomic matrix.
 
 ### Final Data Preparation
 **Combining & Labeling:** The encoding for each genome-antibiotic pair from our 32,309 samples was achieved by summing the Genomic and SMILES matrices and then undergoing a linear scaling operation (division by 2). Each pair was then labeled using the integer value equivalent to the Log2 of the laboratory-derived MIC value. This transformed our challenge into a multi-class classification task. We explored two labeling techniques: a conventional one-hot encoding of the exact label and a soft labeling strategy that highlighted 1-tier accurate labels close to the precise label to differentiate them from inaccurate labels.
