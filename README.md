@@ -16,7 +16,7 @@ Welcome to the _Enformer_MIC_Prediction_ repository. This computational framewor
 
 <br />
 <p align="center">
-  <img src="./Figure_2_1200.png" width=75%>
+  <img src="./Figure_2.png" width=75%>
 </p>
 <br />
 
