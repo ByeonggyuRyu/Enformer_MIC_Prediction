@@ -26,8 +26,8 @@ Pushmeet Kohli1, David R. Kelley2*
 4 These authors contributed equally.
 * correspondence: avsec@google.com, pushmeet@google.com, drk@calicolabs.com
 """
-""" 
-This version of enformer has been modified to fit the Minimum Inhibitory Concentration prediction task of Klebsiella pneumoniae
+""" Enformer_MIC
+This version of the Enformer has been modified to fit the Minimum Inhibitory Concentration prediction task of Klebsiella pneumoniae
 
 Byeonggyu Ryu1
 1 Department of Biological Sciences, KAIST, Daejeon 34141, Republic of Korea 
