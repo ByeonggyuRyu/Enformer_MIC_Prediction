@@ -20,7 +20,7 @@ assert gpus
 for i in range(len(gpus)):
     tf.config.experimental.set_memory_growth(gpus[i], True)
 
-strategy = snt.distribute.Replicator(devices=["/GPU:2", "/GPU:3", "/GPU:4", "/GPU:5", "/GPU:6", "/GPU:7"])
+strategy = snt.distribute.Replicator(devices=["/GPU:0", "/GPU:1", "/GPU:2", "/GPU:3", "/GPU:4", "/GPU:5", "/GPU:6", "/GPU:7"])
 
 BATCH_SIZE = 16
 
